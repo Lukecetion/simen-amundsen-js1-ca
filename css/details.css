@@ -1,0 +1,114 @@
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  margin: auto auto;
+  padding: 5px;
+  max-width: 500px;
+  min-width: 250px;
+  border-radius: 5px;
+  background: #252525;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+}
+
+.card h1 {
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  padding: 25px 20px;
+  background: orange;
+}
+
+.card .desc {
+  background: #202020;
+  padding: 50px;
+}
+
+.card .director {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+.card .director h2 {
+  font-size: inherit;
+  font-weight: bolder;
+  padding: 10px 25px;
+  background: #252525;
+}
+
+.card .director h3 {
+  font-size: inherit;
+  font-weight: lighter;
+  padding: 10px 25px;
+  background: #353535;
+}
+
+.card .producer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+.card .producer h2 {
+  font-size: inherit;
+  font-weight: bolder;
+  padding: 10px 25px;
+  background: #202020;
+}
+
+.card .producer h3 {
+  font-size: inherit;
+  font-weight: lighter;
+  padding: 10px 25px;
+  background: #303030;
+}
+
+.card .release {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+.card .release h2 {
+  font-size: inherit;
+  font-weight: bolder;
+  padding: 10px 25px;
+  background: #252525;
+}
+
+.card .release h3 {
+  font-size: inherit;
+  font-weight: lighter;
+  padding: 10px 25px;
+  background: #353535;
+}

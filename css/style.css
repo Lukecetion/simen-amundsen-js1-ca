@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* —————————————————————————————————————————————————————————————————————————— */
+/*                                   IMPORTS                                  */
+/* —————————————————————————————————————————————————————————————————————————— */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Mirza:wght@400;500;600;700&family=Work+Sans:wght@300;400;500&display=swap");
+/* ————————————————————————————— END OF IMPORTS ————————————————————————————— */
+/* —————————————————————————————————————————————————————————————————————————— */
+/*                               UNIVERSAL STYLE                              */
+/* —————————————————————————————————————————————————————————————————————————— */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.load {
+  margin: auto;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+}
+
+body {
+  color: white;
+  font-family: 'Fira Mono', monospace;
+  background-color: #151515;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='58' viewBox='0 0 42 58'%3E%3Cg fill='%23353535' fill-opacity='0.15'%3E%3Cpath fill-rule='evenodd' d='M12 18h12v18h6v4H18V22h-6v-4zm-6-2v-4H0V0h36v6h6v36h-6v4h6v12H6v-6H0V16h6zM34 2H2v8h24v24h8V2zM6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2 50h32v-8H10V18H2v32zm28-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 5%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.899597)), color-stop(50%, rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.5))), url(/img/hero.jpg) center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.899597) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.5) 100%), url(/img/hero.jpg) center;
+  -webkit-box-shadow: 0 1px 0 #151515;
+          box-shadow: 0 1px 0 #151515;
+}
+
+.hero .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 700;
+  color: white;
+  width: 75%;
+  border-radius: 50vh;
+  background: orange;
+  padding: 50px 20px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+}
+
+.hero .contact {
+  position: relative;
+  bottom: 25px;
+  text-align: center;
+  color: white;
+  max-width: 20%;
+  border-radius: 50vh;
+  background: black;
+  padding: 20px 20px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+}
+
+.hero .contact:hover {
+  color: black;
+  background: white;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 90%;
+  margin: 50px auto;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/* ————————————————————————— END OF UNIVERSAL STYLES ———————————————————————— */
+/* —————————————————————————————————————————————————————————————————————————— */
+/*                               INDEX EXCLUSIVE                              */
+/* —————————————————————————————————————————————————————————————————————————— */
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  margin: 25px;
+  padding: 5px;
+  min-width: 250px;
+  border-radius: 5px;
+  background: #252525;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+}
+
+.card h1 {
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  padding: 25px 20px;
+  background: orange;
+}
+
+.card .director {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+.card .director h2 {
+  font-size: inherit;
+  font-weight: bolder;
+  padding: 10px 25px;
+  background: #252525;
+}
+
+.card .director h3 {
+  font-size: inherit;
+  font-weight: lighter;
+  padding: 10px 25px;
+  background: #353535;
+}
+
+.card .producer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+.card .producer h2 {
+  font-size: inherit;
+  font-weight: bolder;
+  padding: 10px 25px;
+  background: #202020;
+}
+
+.card .producer h3 {
+  font-size: inherit;
+  font-weight: lighter;
+  padding: 10px 25px;
+  background: #303030;
+}
+
+.card a {
+  color: white;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  padding: 20px 15px;
+  background: #151515;
+}
+
+.card a:hover {
+  cursor: pointer;
+  color: black;
+  background: orange;
+}
+
+/* ————————————————————————— END OF INDEX EXCLUSIVE ————————————————————————— */

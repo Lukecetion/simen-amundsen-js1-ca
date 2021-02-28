@@ -1,0 +1,109 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    margin: auto auto;
+    padding: 5px;
+
+    max-width: 500px;
+    min-width: 250px;
+    border-radius: 5px;
+    background: #252525;
+
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+                0 2px 2px rgba(0,0,0,0.11), 
+                0 4px 4px rgba(0,0,0,0.11), 
+                0 8px 8px rgba(0,0,0,0.11), 
+                0 16px 16px rgba(0,0,0,0.11), 
+                0 32px 32px rgba(0,0,0,0.11);
+
+    h1 {
+        text-align: center;
+
+        border-radius: 5px 5px 0 0;
+        padding: 25px 20px;
+        background: orange;
+    }
+
+    .desc {
+        background: #202020;
+        padding: 50px;
+    }
+
+    .director {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+
+        font-size: 18px;
+
+        h2 {
+            font-size: inherit;
+            font-weight: bolder;
+
+            padding: 10px 25px;
+            background: #252525;
+        }
+
+        h3 {
+            font-size: inherit;
+            font-weight: lighter;
+
+            padding: 10px 25px;
+            background: #353535;
+        }
+    }
+
+    .producer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+
+        font-size: 18px;
+
+        h2 {
+            font-size: inherit;
+            font-weight: bolder;
+
+            padding: 10px 25px;
+            background: #202020;
+        }
+
+        h3 {
+            font-size: inherit;
+            font-weight: lighter;
+
+            padding: 10px 25px;
+            background: #303030;
+        }
+    }
+
+    .release {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+
+        font-size: 18px;
+
+        h2 {
+            font-size: inherit;
+            font-weight: bolder;
+
+            padding: 10px 25px;
+            background: #252525;
+        }
+
+        h3 {
+            font-size: inherit;
+            font-weight: lighter;
+
+            padding: 10px 25px;
+            background: #353535;
+        }
+    }
+
+}
